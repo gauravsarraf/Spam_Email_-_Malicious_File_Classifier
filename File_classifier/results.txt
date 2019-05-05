@@ -1,0 +1,136 @@
+python learning.py
+Researching important feature based on 54 total features
+
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+15 features identified as important:
+1. feature DllCharacteristics (0.132895)
+2. feature Characteristics (0.118172)
+3. feature Subsystem (0.071885)
+4. feature SizeOfOptionalHeader (0.068037)
+5. feature MajorSubsystemVersion (0.066310)
+6. feature ResourcesMinEntropy (0.060380)
+7. feature SizeOfStackReserve (0.056193)
+8. feature SectionsMaxEntropy (0.053765)
+9. feature Machine (0.051755)
+10. feature SectionsMinEntropy (0.039884)
+11. feature VersionInformationSize (0.035482)
+12. feature ImageBase (0.028096)
+13. feature ResourcesMaxEntropy (0.024567)
+14. feature MinorLinkerVersion (0.023826)
+15. feature SectionsNb (0.019961)
+
+Now testing algorithms
+False positive rate : 0.688192 %
+False negative rate : 1.641719 %
+DecisionTree : 99.025715 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.99296394, 0.98393914]), array([0.99311808, 0.98358281]), array([0.993041  , 0.98376094]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.465694 %
+False negative rate : 0.845002 %
+RandomForest : 99.420500 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.99637418, 0.98916185]), array([0.99534306, 0.99154998]), array([0.99585836, 0.99035447]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.362206 %
+False negative rate : 1.158860 %
+ExtraTree : 99.398769 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.99503927, 0.99152337]), array([0.99637794, 0.9884114 ]), array([0.99570815, 0.98996494]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.776156 %
+False negative rate : 2.028006 %
+GradientBoosting : 98.848243 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.99131514, 0.98185338]), array([0.99223844, 0.97971994]), array([0.99177657, 0.9807855 ]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.895167 %
+False negative rate : 2.305649 %
+AdaBoost : 98.681637 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.99012614, 0.97907089]), array([0.99104833, 0.97694351]), array([0.99058702, 0.97800604]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.000000 %
+False negative rate : 99.987929 %
+GNB : 70.000000 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.69998913, 1.        ]), array([1.00000000e+00, 1.20714631e-04]), array([8.23521892e-01, 2.41400121e-04]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 1.174583 %
+False negative rate : 18.167552 %
+MNB : 93.726911 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.92695593, 0.9675992 ]), array([0.98825417, 0.81832448]), array([0.95662409, 0.88672335]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.025872 %
+False negative rate : 96.028489 %
+BNB : 71.169866 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.70835166, 0.98502994]), array([0.99974128, 0.03971511]), array([0.82919188, 0.07635182]), array([19326,  8284]))
+
+
+	*********************
+
+
+False positive rate : 0.874470 %
+False negative rate : 1.134718 %
+kNN : 99.047447 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+(array([0.99511714, 0.97978227]), array([0.9912553 , 0.98865282]), array([0.99318247, 0.98419756]), array([19326,  8284]))
+
+
+	*********************
+
+
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/svm/base.py:196: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+False positive rate : 100.000000 %
+False negative rate : 0.000000 %
+SVM : 30.003622 %
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1052: UserWarning: Note that pos_label (set to 0) is ignored when average != 'binary' (got None). You may use labels=[pos_label] to specify a single positive class.
+  % (pos_label, average), UserWarning)
+/home/gs/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+(array([0.        , 0.30003622]), array([0., 1.]), array([0.        , 0.46158132]), array([19326,  8284]))
+
+
+	*********************
+
