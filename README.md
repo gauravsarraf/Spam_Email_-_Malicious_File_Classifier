@@ -1,4 +1,4 @@
-# Spam_Email_-_Malicious_File_Classifier
+# Spam_Email_-_Malicious_File_Classifier_using_ML
 Classification efficiency compared with over 10 different algorithms.
 
 ## Algorithms used:  
